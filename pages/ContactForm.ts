@@ -8,6 +8,7 @@ export class ContactForm {
   readonly champSujet: Locator;
   readonly champMessage: Locator;
   readonly boutonSubmit: Locator;
+  readonly alerte: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -19,6 +20,10 @@ export class ContactForm {
     // donc getByLabel ne trouve pas le champ. À repasser en getByLabel quand le défaut sera corrigé.
     this.champMessage = page.getByTestId('ContactDescription');
     this.boutonSubmit = page.getByRole('button', { name: 'Submit' });
+    // Contournement BUG-002 : le message d'erreur est dans un div avec class="alert alert-danger" 
+    // et non pas dans un élément avec role="alert", donc getByRole ne trouve pas 
+    // le message. À repasser en getByRole quand le défaut sera corrigé.
+    this.alerte = page.locator('.alert-danger');
   }
 
   async remplir(nom: string, email: string, telephone: string, sujet: string, message: string) {

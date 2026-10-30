@@ -19,7 +19,9 @@ export class HomePage {
   }
 
   async ouvrir() {
+    const reponseChambres = this.page.waitForResponse((reponse) => reponse.url().includes('/api/room') && reponse.request().method() === 'GET',);
     await this.page.goto('/');
+    expect((await reponseChambres).status()).toBe(200);
     // la page affiche un indicateur de chargement tant que React n'a pas récupéré ses données
     await expect(this.titre).toBeVisible();
   }

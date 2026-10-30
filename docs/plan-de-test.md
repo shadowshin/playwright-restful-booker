@@ -38,8 +38,8 @@ Statut : ✅ automatisé, 🔲 à faire
 | ----- | --------------------------------------------------------------------------------- | ----------- | ------ |
 | UI-01 | La page d'accueil affiche le nom de l'établissement et les chambres              | Passant     | ✅     |
 | UI-02 | Envoi du formulaire de contact avec des données valides, message de confirmation | Passant     | ✅     |
-| UI-03 | Formulaire de contact vide, messages d'erreur affichés                           | Non passant | 🔲     |
-| UI-04 | Email invalide dans le formulaire de contact, erreur affichée                    | Non passant | 🔲     |
+| UI-03 | Formulaire de contact vide, messages d'erreur affichés                           | Non passant | ✅     |
+| UI-04 | Email invalide dans le formulaire de contact, erreur affichée                    | Non passant | ✅     |
 | UI-05 | Réservation d'une chambre de bout en bout, confirmation affichée                | Passant     | 🔲     |
 | UI-06 | Réservation sans dates sélectionnées, refusée                                 | Non passant | 🔲     |
 
