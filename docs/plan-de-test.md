@@ -57,8 +57,8 @@ Statut : ✅ automatisé, 🔲 à faire
 | ID     | Scénario                                                               | Type                    | Statut |
 | ------ | ----------------------------------------------------------------------- | ----------------------- | ------ |
 | API-01 | `GET /api/room` renvoie la liste des chambres avec un contrat valide  | Passant                 | ✅     |
-| API-02 | `POST /api/auth/login` renvoie un token avec des identifiants valides | Passant                 | 🔲     |
-| API-03 | `POST /api/auth/login` refusé avec un mauvais mot de passe           | Non passant             | 🔲     |
+| API-02 | `POST /api/auth/login` renvoie un token avec des identifiants valides | Passant                 | ✅     |
+| API-03 | `POST /api/auth/login` refusé avec un mauvais mot de passe           | Non passant             | ✅     |
 | API-04 | Création d'une chambre sans authentification, refusée                 | Non passant, sécurité | 🔲     |
 | API-05 | Création puis suppression d'une chambre avec authentification          | Passant, CRUD           | 🔲     |
 
